@@ -23,7 +23,7 @@ var instance = new Bilibala(element, [text], [options])
 2. use in browser
 ```html
 <div id="container"></div>
-<script src="/path/bilibala.js"></script>
+<script src="https://unpkg.com/bilibala@0.1.0/dist/bilibala.min.js"></script>
 <script>
   window.onload = function () {
     const container = document.getElementById('container')

@@ -2,7 +2,7 @@
   "name": "bilibala",
   "version": "0.1.0",
   "description": "A interesting typing animation plugin",
-  "main": "./src/index.js",
+  "main": "./dist/bilibala.js",
   "scripts": {
     "build": "cross-env NODE_ENV=build webpack",
     "build:min": "cross-env NODE_ENV=min webpack",
@@ -15,6 +15,10 @@
     "javascript",
     "plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffwcx/bilibala.git"
+  },
   "author": "jeffwcx",
   "license": "MIT",
   "devDependencies": {
