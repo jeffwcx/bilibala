@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test for Bilibala</title>
+  <link rel="stylesheet" href="../themes/blink.css">
+  <style>
+    .cursor {
+      min-height: 33px;
+    }
+    #container {
+      font-size: 30px;
+      word-break: break-all;
+    }
+    #container > span {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="../dist/bilibala.js"></script>
+  <script>
+    window.onload = function() {
+      const container = document.querySelector('#container')
+      var instance =  new Bilibala(container)
+      // instance.type('Bilibala', { tag: 'a', attrs: { href: '' } })
+      // .type(' is')
+      // .type(' powerful', { tag: 'strong' })
+      // .type(' typing', { style: { 'font-style': 'italic' } })
+      // .type(' plugin')
+      // .backspace(100, { speed: 60 })
+      instance.type('you can')
+      .type(' type', { tag: 'strong' })
+      .type(',')
+      .type('backspace', { tag: 'strong' })
+      .type(',')
+      .type('move', { tag: 'strong' })
+      .type(',')
+      .type('or add stylesheet')
+    }
+  </script>
+</body>
+</html>

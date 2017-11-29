@@ -1,0 +1,18 @@
+{
+    "source": "./src",
+    "destination": "./docs",
+    "package": "./package.json",
+    "index": "./README.md",
+    "plugins": [{
+      "name": "esdoc-standard-plugin",
+      "option": {
+        "brand": {
+          "title": "Bilibala Doc",
+          "logo": "./manual/asset/small-logo.png"
+        }
+      }
+    }, {
+      "name": "esdoc-ecmascript-proposal-plugin",
+      "option": { "all": true }
+    }]
+}

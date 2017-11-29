@@ -1,0 +1,19 @@
+$cursor-animate-name = blink
+$cursor-animate-time = 1000ms
+$cursor-width = 1.5px
+$cursor-color = #000
+@keyframes {$cursor-animate-name} {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.cursor::after
+  content ' '
+  width $cursor-width
+  background: $cursor-color
+  animation $cursor-animate-name $cursor-animate-time infinite
+  position absolute
+  top 0
+  right 0
+  height 95%
+  z-index 10
